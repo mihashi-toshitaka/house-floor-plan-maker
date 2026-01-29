@@ -59,6 +59,7 @@
 - eslint を `^8.57.0` に調整して eslint-plugin-react-hooks の peer dependency と整合させた。
 - `npm install` を再実行し、`--legacy-peer-deps` なしで依存解決できることを確認。
 - `package-lock.json` はコミット対象外のため削除。
+- 開発用に Context7 MCP の設定を `.cursor/mcp.json` に追加。
 
 ### 進行状況
 - 依存解決の回避策を利用した上でビルド可能。
