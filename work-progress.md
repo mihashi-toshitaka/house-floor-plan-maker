@@ -67,3 +67,8 @@
 
 ### 次に進めるための確認事項（要決定）
 - eslint / eslint-plugin-react-hooks の依存関係を正規化するか確認。
+
+## 2026-01-31
+### 実施内容
+- AGENTS.md に「技術確認の際は context7 の利用も行う」指針を追加。
+- `.cursor/mcp.json` から Context7 の env 設定を削除。
