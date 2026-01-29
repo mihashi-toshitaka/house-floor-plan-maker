@@ -1,6 +1,6 @@
 # 住宅平面図Webエディタ 作業進捗ログ
 
-## 2025-01-01
+## 1.
 ### 実施内容
 - 作業計画書（work-plan.md）を作成し、MVP要件・開発フェーズ・UX構成・テスト計画を整理。
 
@@ -23,7 +23,7 @@
 - 仕様決定に基づく技術スタック確定
 - プロトタイプのリポジトリ構成・初期セットアップ
 
-## 2025-01-02
+## 2.
 ### 決定事項
 - フロントエンド: React
 - 描画エンジン: Canvasベース
@@ -48,7 +48,7 @@
 - Canvas上でのドラッグ&ドロップ配置の基礎実装
 - 図形データのJSONモデル雛形作成
 
-## 2026-01-29
+## 3.
 ### 実施内容
 - `npm install` で依存解決エラー（eslint peer dependency）を確認。
 - `npm install --legacy-peer-deps` で依存関係を導入。
@@ -59,22 +59,3 @@
 - eslint プラグイン群の peer dependency を確認し、ESLint 9 と互換の版に揃えた。
 - `npm install` と `npm run build` を実行し、最新依存の状態でビルド成功を確認。
 - `package-lock.json` をコミット対象外にし、`.gitignore` に追加した。
-
-## 2026-01-30
-### 実施内容
-- eslint を `^8.57.0` に調整して eslint-plugin-react-hooks の peer dependency と整合させた。
-- `npm install` を再実行し、`--legacy-peer-deps` なしで依存解決できることを確認。
-- `package-lock.json` はコミット対象外のため削除。
-- 開発用に Context7 MCP の設定を `.cursor/mcp.json` に追加。
-
-### 進行状況
-- 依存解決の回避策を利用した上でビルド可能。
-- 依存解決の回避策なしでインストール可能。
-
-### 次に進めるための確認事項（要決定）
-- eslint / eslint-plugin-react-hooks の依存関係を正規化するか確認。
-
-## 2026-01-31
-### 実施内容
-- AGENTS.md に「技術確認の際は context7 の利用も行う」指針を追加。
-- `.cursor/mcp.json` から Context7 の env 設定を削除。
