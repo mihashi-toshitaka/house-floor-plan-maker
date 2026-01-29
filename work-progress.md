@@ -47,3 +47,22 @@
 ### 次の作業予定（決定後に着手）
 - Canvas上でのドラッグ&ドロップ配置の基礎実装
 - 図形データのJSONモデル雛形作成
+
+## 2026-01-29
+### 実施内容
+- `npm install` で依存解決エラー（eslint peer dependency）を確認。
+- `npm install --legacy-peer-deps` で依存関係を導入。
+- `npm run build` でビルド成功を確認。
+
+## 2026-01-30
+### 実施内容
+- eslint を `^8.57.0` に調整して eslint-plugin-react-hooks の peer dependency と整合させた。
+- `npm install` を再実行し、`--legacy-peer-deps` なしで依存解決できることを確認。
+- `package-lock.json` はコミット対象外のため削除。
+
+### 進行状況
+- 依存解決の回避策を利用した上でビルド可能。
+- 依存解決の回避策なしでインストール可能。
+
+### 次に進めるための確認事項（要決定）
+- eslint / eslint-plugin-react-hooks の依存関係を正規化するか確認。
