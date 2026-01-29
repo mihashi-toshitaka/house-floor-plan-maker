@@ -54,6 +54,12 @@
 - `npm install --legacy-peer-deps` で依存関係を導入。
 - `npm run build` でビルド成功を確認。
 
+### 実施内容（追加）
+- 依存関係の最新安定版を調査し、React 19 / Vite 7 / ESLint 9 系に更新。
+- eslint プラグイン群の peer dependency を確認し、ESLint 9 と互換の版に揃えた。
+- `npm install` と `npm run build` を実行し、最新依存の状態でビルド成功を確認。
+- `package-lock.json` をコミット対象外にし、`.gitignore` に追加した。
+
 ## 2026-01-30
 ### 実施内容
 - eslint を `^8.57.0` に調整して eslint-plugin-react-hooks の peer dependency と整合させた。
